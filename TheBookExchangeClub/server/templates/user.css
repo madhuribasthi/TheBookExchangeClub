@@ -1,0 +1,132 @@
+body{
+    background-image: url(four4.jpg);
+	font-family: 'Quicksand';
+	background-size: cover;
+	/* background-repeat: no-repeat; */
+	/*margin-left: 100px;*/
+	margin: 100px auto;
+	overflow-x: hidden;
+}
+.btn-outline-dark{
+	/* margin-left: 205px; */
+	color: white;
+	background:black;
+	opacity: 0.8;
+}
+.add{
+	/* margin-left: 205px; */
+	font-size: 40px;
+	color: white;
+}
+.edit{
+	color:white;
+	/* margin-top: 10px; */
+	/* margin-left: 340px; */
+	font-size: 20px;
+	width: 200px;
+}
+.contact{
+	/* margin-left: 340px; */
+	width: 200px;
+}
+table{
+	margin-top:10px;
+}
+
+tbody {
+    display:block;
+    max-height:500px;
+    overflow:auto;
+}
+thead, tbody {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+tr{
+	display: table-row;
+}
+td{
+	width: 25%;
+}
+/*thead {
+    width: calc( 100% - 1em )
+}*/
+.dropdown{
+	margin-right: 20px;
+}
+.dropdown-menu {
+	width: 20px;
+}
+.navbar-default{
+	background:#000000;
+	color:#000000 ;
+	opacity: 0.9;
+	font-family: 'Quicksand';
+    font-weight:900;
+}
+p{
+	margin-bottom: 0px;
+}
+.p1{
+	padding: 5px;
+	border-bottom: 2px solid lightskyblue;
+}
+.p2{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   padding: 5px;
+   border-bottom: 2px solid lightskyblue;
+}
+.p-fade{
+	background-color: rgb(148, 155, 163);
+}
+
+.ok{
+ margin:auto;
+ margin-left: 5px;
+}
+.search-input{
+	/* margin-left: 920px; */
+	display: inline-block;
+	width: 100%;
+}
+
+.arrange-hor{
+	box-sizing: border-box;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 10px;
+}
+.name-div{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: flex-end;
+	margin-bottom: 10px;
+}
+.mybook-div{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: flex-start;
+	margin-top: 10px;
+}
+.arr-form{
+	width: 200px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	margin: 10px 10px 10px 0;
+}
+.ser-n-table{
+	margin: 10px;
+}
+.noti-scroll{
+	max-height: 400px;
+	overflow-y: auto;
+}

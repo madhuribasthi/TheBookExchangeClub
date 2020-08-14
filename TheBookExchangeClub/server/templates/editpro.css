@@ -1,0 +1,67 @@
+body{
+    background-image: url(two.jpg);
+	font-family: 'Quicksand';
+	background-size: cover;
+	/*margin-left: 100px;*/
+	margin: 100px auto;
+}
+small{
+	color: black;
+}
+.btn-outline-dark{
+	margin: auto;
+	color: white;
+	background:black;
+	opacity: 0.9;
+	border: none;
+}
+.container{
+	border: 1px solid white;
+	border-radius: 25px;
+	padding: 20px;
+	color: white;
+	font-family: 'Quicksand';
+	font-weight: 500;
+    background: black;
+	width: 400px;
+	margin-top: 30px;
+	opacity: 0.9;
+}
+.dropdown{
+	margin-right: 20px;
+	}
+.dropdown-menu {
+	width: 20px;
+}
+.navbar-default{
+	background:#000000;
+	color:#000000 ;
+	opacity: 0.9;
+	font-family: 'Quicksand';
+    font-weight:900;
+}
+p{
+	margin-bottom: 0px;
+}
+.p1{
+	padding: 5px;
+	border-bottom: 2px solid lightskyblue;
+}
+.p2{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   padding: 5px;
+   border-bottom: 2px solid lightskyblue;
+}
+.p-fade{
+	background-color: rgb(148, 155, 163);
+}
+.ok{
+ margin:auto;
+ margin-left: 5px;
+}
+.noti-scroll{
+	max-height: 400px;
+	overflow-y: auto;
+}

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Review</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="review.css">
+
+  	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script src="review.js"></script>
+	<script src="notification.js"></script>
+	<script src="getnoti.js"></script>
+
+	<link href="https://fonts.googleapis.com/css?family=Quicksand:500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+</head>
+<body>
+	<nav class="navbar navbar-dark navbar-expand-lg navbar-default fixed-top">
+	<button class="navbar-toggler" data-toggle="collapse" type="button" data-target="#collapseNavbar" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse"  id="collapseNavbar">	
+		<ul class="navbar-nav mr-auto">
+		<li class="nav-item">
+			<a class="nav-link" href="main.html"><button class='btn btn-outline-light'>Main</button></a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link"href="about.html"><button class="btn btn-outline-light">About</button></a>
+		</li>
+		</ul>
+		<ul class="navbar-nav mr-5">
+		<li class="nav-item">
+			<div class="dropdown">
+			<button class="btn btn-primary dropdown-toggle" type="button" id="notifCount" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Notifications: <span id="notifCountNum"></span></button>
+			<div id="notifications" class="dropdown-menu noti-scroll" aria-labelledby="notifCount">
+			</div>
+			</div>
+		</li>
+		<li class="nav-item">
+			<div class="dropdown">
+			<button class="btn btn-primary dropdown-toggle" type="button" id="username" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Username</button>
+			<div class="dropdown-menu" aria-labelledby="username">
+				<a id="totalCredits" class="dropdown-item" href="#">Total Credits: <span id="totalCreditNumber"></span></a>
+				<a id="userProfile" class="dropdown-item" href="#">My Profile</a>
+				<a id="editProfile" class="dropdown-item" href="#">Edit Profile</a>
+				<a id="pastExchanges" class="dropdown-item" href="#">Past Exchanges</a>
+				<a id="logoutButton" class="dropdown-item" href="#">Logout</a>
+			</div>
+			</div>
+		</li>
+		</ul>
+	</div>
+	</nav>	
+<!-- ======================navigation bar ends here============================= -->
+
+<!-- ======================The description of the book starts here============================= -->
+	<div class="container">
+       <div class="d-flex p-2">
+       	<!--  <div class="col-lg-5 photo col-sm-6"> -->
+		<div class="book-img p-2 mr-4">
+			<img src="book2.png" id="bimage" class="img-responsive">
+		</div>
+		<div class="p-2 mr-auto flex-fill">
+       	 	<div class="btitle">
+				<h3 id="booktitle" class="display-3">City Of Bones</h3>
+       	 	</div>
+				<p id="main-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</p>
+       	 	</div>
+		</div>
+<!-- ==============================The comment section starts here=============================== -->
+	   	<div class="d-flex flex-column pd-2">
+			<h4 class="display-3">Book Reviews</h4>
+	   	<div class="p-1 justify-content-start ">
+			<div class="form-group">
+				<label for="addr"><button class="btn btn-dark">Add Review</button></label>
+				<textarea class="form-control" rows="5" id="addr"></textarea>
+				<div class="d-flex p-2 mt-auto mb-auto">
+					<div class="w-50 p-1">
+					<h5 class="text-dark font-weight-bold">Your rating: </h5>
+					<span onmouseover="checkstar(1)" onmouseout="uncheckstar(1)" data-rate="1" class="fa fa-star getrating"></span>
+					<span onmouseover="checkstar(2)" onmouseout="uncheckstar(2)" data-rate="2" class="fa fa-star getrating"></span>
+					<span onmouseover="checkstar(3)" onmouseout="uncheckstar(3)" data-rate="3" class="fa fa-star getrating"></span>
+					<span onmouseover="checkstar(4)" onmouseout="uncheckstar(4)" data-rate="4" class="fa fa-star getrating"></span>
+					<span onmouseover="checkstar(5)" onmouseout="uncheckstar(5)" data-rate="5" class="fa fa-star getrating"></span>
+					<div class="clearfix"></div>
+					</div>
+					<div id="submit-comment" class="w-50 d-flex p-2 justify-content-end"><button class="btn btn-danger">Submit</button></div>
+				</div>
+			</div>
+		</div>
+		<script>
+			let stars = document.querySelectorAll(".getrating")
+			stars = Array.from(stars)
+			let flag = 0
+			
+			function checkstar(num) {
+				if(flag==0)
+				for(let i=0;i<num;i++)
+				{
+					stars[i].className = "fa fa-star getrating checked"
+				}
+			}
+
+			function uncheckstar(num) {
+				if(flag==0)
+				for(let i=0;i<num;i++)
+				{
+					stars[i].className = "fa fa-star getrating"
+				}
+			}
+			
+			stars.forEach(item=>{
+				item.addEventListener('click',(event)=>{
+					for(let i=0;i<5;i++)
+					{
+						stars[i].className = "fa fa-star getrating"
+					}
+
+					for(let i=0;i<item.getAttribute('data-rate');i++)
+					{
+						stars[i].className = "fa fa-star getrating checked"
+					}
+					flag=1;
+				})
+			})
+		</script>
+	   	<!-- <div id="submit-comment" class="d-flex p-1 mt-1 justify-content-end"><button class="btn btn-danger">Submit</button></div> -->
+	   	<div class="d-flex p-2 justify-content-start">
+			<span class="border-bottom border-dark">
+			<h4 class="display-5">See what other customers thing about this book: </h4> </span>
+		</div>
+		<div id="comment-section">   
+			<!-- <div class="d-flex p-2 flex-row cmnt-div">
+				<div class="p-2 justify-content-start mt-2">
+					<h3 class="h1 text-hide user-icon">MDBootstrap</h3>
+					<h5 class="text-dark font-weight-bold" style="text-align: center;">User</h5>
+				</div>
+				<div class="p-2 mt-auto mb-auto">
+					<h5 class="text-dark font-weight-bold">User</h5>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star"></span>
+					<span class="fa fa-star"></span>
+					<div class="clearfix"></div>
+						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore quibusdam error accusantium repudiandae explicabo quas sit excepturi ipsum. Culpa, rerum in cumque eos totam rem quasi. Maiores consequatur dolor debitis nesciunt illo ipsam t</p>
+				</div>
+			</div> -->
+		</div>	
+	</div>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign Up</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand:300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="signup.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script src="signup.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-dark navbar-expand-lg navbar-default">
+<button class="navbar-toggler" data-toggle="collapse" type="button" data-target="#collapseNavbar" 
+aria-expanded="false" aria-label="Toggle navigation">
+	<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse"  id="collapseNavbar">	
+  <ul class="navbar-nav mr-auto">
+  	<li class="nav-item">
+  		<a class="nav-link" href="index.html"><button class='btn btn-outline-light'>Home</button></a>
+  	</li>
+  	<li class="nav-item">
+		<a class="nav-link"href="about.html"><button class="btn btn-outline-light">About</button></a>
+	</li>
+  </ul>
+  <ul class="navbar-nav">
+  	<li class="nav-item">
+  		<a class="nav-link" href="login.html"><button class="btn btn-primary">Login</button></a>
+  	</li>
+  	<li>
+  		<a class="nav-link" href="signup.html"><button class="btn btn-primary">Sign Up</button></a>
+  	</li>
+  </ul>
+</div>
+</nav>	
+	<div class="container">
+		<div class="form-group">
+            <h3 class="form-text">Sign Up Form</h3>
+	        <small>Create an account. It's free.</small>
+	        <hr>
+	    </div>   
+			  <form action="/signup" method="POST">
+				  <div class="form-group">
+				    <label for="Fullname">Full name</label>
+				    <input type="text" class="form-control" id="Fullname" aria-describedby="emailHelp">
+				  </div>
+				  <div class="form-group">
+				    <label for="Password">Password</label>
+				    <input type="password" class="form-control" id="Password">
+				    <small id="Password" class="form-text text-muted">Your password must contain at least one digit, one lower-case character and one upper-case character.</small>
+				  </div>
+				  <div class="form-group">
+				  	<label for="RePassword">Re-enter password</label>
+				    <input type="password" class="form-control" id="RePassword">
+				  </div>
+				  <div class="form-group">
+				  	<label for="phoneno">Enter your phone number</label>
+				  	<input type="text" name="phoneno" id="phoneno" class="form-control">
+				  	<small id="phoneno" class="form-text text-muted">Only people you exchange books with will be able to see it.</small>
+				  </div>
+				  <button type="submit" id="signupButton" class="btn btn-outline-light">Sign Up</button>
+			   </form>
+</div>	
+</body>
+</html>

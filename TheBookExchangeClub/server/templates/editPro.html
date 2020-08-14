@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Edit Profile</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="editpro.css">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+	<link href="https://fonts.googleapis.com/css?family=Quicksand:500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+
+	<script src="notification.js"></script>
+	<script src="editpro.js"></script>
+	<script src="getnoti.js"></script>
+</head>
+<body>
+	<nav class="navbar navbar-dark navbar-expand-lg navbar-default fixed-top">
+		<button class="navbar-toggler" data-toggle="collapse" type="button" data-target="#collapseNavbar" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse"  id="collapseNavbar">	
+  			<ul class="navbar-nav mr-auto">
+  				<li class="nav-item">
+  					<a class="nav-link" href="main.html"><button class='btn btn-outline-light'>Main</button></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link"href="about.html"><button class="btn btn-outline-light">About</button></a>
+				</li>
+  			</ul>
+  			<ul class="navbar-nav mr-4">
+				<li class="nav-item">
+					<div class="dropdown">
+						<button class="btn btn-primary dropdown-toggle" type="button" id="notifCount" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Notifications: <span id="notifCountNum"></span></button>
+						<div id="notifications" class="dropdown-menu noti-scroll" aria-labelledby="notifCount"></div>
+					</div>
+				</li>
+    			<li class="nav-item">
+  					<div class="dropdown">
+						<button class="btn btn-primary dropdown-toggle" type="button" id="username" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Username</button>
+						<div class="dropdown-menu" aria-labelledby="username">
+							<a id="totalCredits" class="dropdown-item" href="#">Total Credits: <span id="totalCreditNumber"></span></a>
+							<a id="userProfile" class="dropdown-item" href="#">My Profile</a>
+							<a id="editProfile" class="dropdown-item" href="#">Edit Profile</a>
+							<a id="pastExchanges" class="dropdown-item" href="#">Past Exchanges</a>
+							<a id="logoutButton" class="dropdown-item" href="#">Logout</a>
+		    			</div>
+        			</div>
+  				</li>
+  			</ul>
+		</div>
+	</nav>	
+
+	<!-- <button class="btn btn-outline-dark"><h1 class="display-5">Edit Profile</h1></button> -->
+	<div class="container d-flex p-3"><button class="btn btn-sm btn-outline-dark"><h1 class="display-5">Edit Profile</h1></button></div>
+	<div class="container">
+				<!-- <div class="form-group">
+					<h3 class="form-text">Sign Up Form</h3>
+					<small>Create an account. It's free.</small>
+					<hr> -->
+				<!-- </div>   --> 
+		<form>
+			<div class="form-group">
+				<label for="Fullname">Edit name</label>
+				<input type="text" class="form-control" id="Fullname" aria-describedby="emailHelp">
+			</div>
+			<div class="form-group">
+				<label for="Password">Change Password</label>
+				<input type="password" class="form-control" id="Password">
+				<small id="Password" class="form-text text-muted">Your password must contain at least one digit, one lower-case character and one upper-case character.</small>
+			</div>
+			<div class="form-group">
+				<label for="RePassword">Re-enter password</label>
+				<input type="password" class="form-control" id="RePassword">
+			</div>
+			<div class="form-group">
+				<label for="phoneno">Edit phone number</label>
+				<input type="text" name="phoneno" id="phoneno" class="form-control">
+			</div>
+			<button id="confirmButton" type="submit" class="btn btn-outline-primary">Confirm</button>
+			<!-- <button id="cancelButton" class="btn btn-outline-danger">Cancel</button> -->
+		</form>
+	</div>	
+</body>
+</html>

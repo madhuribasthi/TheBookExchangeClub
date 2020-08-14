@@ -1,0 +1,35 @@
+body{
+	/*background: #2c2f30;*/
+	/*background:#1595bf->blue;*/
+	background-image: url("one.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	font-family: 'Quicksand';
+	color:#ffffff ;
+}
+h1{
+	color:#1281db;
+	/*font-family: 'Special Elite', cursive;*/
+}
+.navbar-default{
+	background:#000000;
+	color:#000000 ;
+	opacity: 0.9;
+	font-family: 'Quicksand';
+    font-weight:900;
+}
+/*div::after
+{
+	background:#1595bf;
+	opacity: 0.9;
+}*/
+.jumbotron{
+margin-top: 90px;
+padding: 2rem 1rem;
+border-radius: 0.3rem;
+/*background: #2c2f30;-> dark grey*/
+/*background:#1281db;->dark blue*/
+background: #000000;
+z-index: -1;
+opacity: 0.9;
+}

@@ -1,0 +1,89 @@
+body{
+    background-image: url(four4.jpg);
+	font-family: 'Quicksand';
+	background-size: contain;
+	/*margin-left: 100px;*/
+	margin: 100px auto;
+}
+.btn-outline-dark{
+	margin-left: 205px;
+	color: white;
+	background:black;
+	opacity: 0.8;
+}
+.dropdown{
+	margin-right: 20px;
+}
+.dropdown-menu {
+	width: 20px;
+}
+.navbar-default{
+	background:#000000;
+	color:#000000 ;
+	opacity: 0.9;
+	font-family: 'Quicksand';
+    font-weight:900;
+}
+.container{
+	background-color: rgb(230, 255, 168,0.8);
+}
+/*.img{
+	width: 100%;
+	height: 500px;
+
+}*/
+.checked {
+  color: orange;
+}
+.img {
+	height: 400px;
+}
+
+h5{
+	margin-bottom: 0;
+}
+.user-icon{
+	background-image: url('default.png');
+	background-size: contain;
+	background-repeat: no-repeat; 
+	width: 90px; 
+	height: 90px;
+}
+.cmnt-div{
+	border-bottom: 2px solid chocolate;
+}
+p{
+	margin-bottom: 0px;
+}
+.p1{
+	padding: 5px;
+	border-bottom: 2px solid lightskyblue;
+}
+.p2{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   padding: 5px;
+   border-bottom: 2px solid lightskyblue;
+}
+.p-fade{
+	background-color: rgb(148, 155, 163);
+}
+.ok{
+ margin:auto;
+ margin-left: 5px;
+}
+#bimage{
+	height: 30vh;
+	width: 40vh;
+}
+.book-img{
+	margin-top: 22vh;
+}
+.getrating{
+	cursor: pointer;
+}
+.noti-scroll{
+	max-height: 400px;
+	overflow-y: auto;
+}
